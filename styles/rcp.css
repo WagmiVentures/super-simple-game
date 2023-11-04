@@ -67,16 +67,22 @@ h1,h3{
 }
 
 .keep-score{
+   
+    max-width: 30vw;
+
     text-align: center;
     background-color: rosybrown;
     max-width: 30vw;
     margin: 50px auto 10px auto;
     padding: 5px;
     border-radius: 20px;
+    
 }
 
 .score {
-   white-space: nowrap;
+    white-space: nowrap;
+    font-size: 3vw;
+    
 }
 
 .reset-button{
