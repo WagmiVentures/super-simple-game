@@ -15,6 +15,8 @@ document.querySelector(".reset").addEventListener("click", () => {
   win = 0;
   lose = 0;
   document.querySelector(".score").innerHTML = `Win: ${win} vs Lose:${lose}`;
+  document.querySelector(".win-lose").innerHTML = `Select one of below to start`;
+  document.querySelector(".show-result").innerHTML = `Let's have some fun!`;
 });
 
 //use R S P keys to play rock
