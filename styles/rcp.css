@@ -75,6 +75,10 @@ h1,h3{
     border-radius: 20px;
 }
 
+.score {
+   white-space: nowrap;
+}
+
 .reset-button{
 	text-align: center;
 	margin-top: 30px;
