@@ -57,6 +57,10 @@ h1,h3{
     white-space: nowrap;
 }
 
+.show-result {
+   font-size: 3vw;
+}
+
 @media (min-width:1000px) {
     button{
         width: 200px;
