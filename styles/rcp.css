@@ -135,7 +135,7 @@ h1,h3{
 
 @media (min-width: 450px) {
 	.score {
-		font-size: 3vw;
+		font-size: 3vh;
 	}
 }
 
