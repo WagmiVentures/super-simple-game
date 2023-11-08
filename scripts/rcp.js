@@ -14,7 +14,7 @@ document.querySelector(".rock").addEventListener("click", () => {
 document.querySelector(".reset").addEventListener("click", () => {
   win = 0;
   lose = 0;
-  document.querySelector(".score").innerHTML = `Win: ${win} vs Lose:${lose}`;
+  document.querySelector(".score").innerHTML = `<img src="img/vedar.jpg" alt="" class="avatar">: ${win} -- <img src="img/c3po.jpg" alt="" class="avatar">:${lose}`;
   location.reload();
 });
 
