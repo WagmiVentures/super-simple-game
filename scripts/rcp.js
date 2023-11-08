@@ -73,7 +73,7 @@ function playerSelectRock() {
       ".show-result"
     ).innerHTML = `<img src="img/c3po.jpg" alt="" class="avatar"> ${computerSelection} &#128400, <img src="img/vedar.jpg" alt="" class="avatar"> : Rock &#9994.`;
   }
-  document.querySelector(".score").innerHTML = `Win: ${win} vs Lose:${lose}`;
+  document.querySelector(".score").innerHTML = `<img src="img/vedar.jpg" alt="" class="avatar">: ${win} vs <img src="img/c3po.jpg" alt="" class="avatar">:${lose}`;
 }
 
 // compare result for scissor button
@@ -101,7 +101,7 @@ function playerSelectScissor() {
       ".show-result"
     ).innerHTML = `<img src="img/c3po.jpg" alt="" class="avatar"> ${computerSelection} &#128400, <img src="img/vedar.jpg" alt="" class="avatar"> : Scissor &#9996.`;
   }
-  document.querySelector(".score").innerHTML = `Win: ${win} vs Lose:${lose}`;
+ document.querySelector(".score").innerHTML = `<img src="img/vedar.jpg" alt="" class="avatar">: ${win} vs <img src="img/c3po.jpg" alt="" class="avatar">:${lose}`;
 }
 
 //compare result for paper button
@@ -128,5 +128,5 @@ function playerSelectPaper() {
       "h3"
     ).innerHTML = `<img src="img/c3po.jpg" alt="" class="avatar"> ${computerSelection} &#128400, <img src="img/vedar.jpg" alt="" class="avatar"> : Paper &#128400.`;
   }
-  document.querySelector(".score").innerHTML = `Win: ${win} vs Lose:${lose}`;
+  document.querySelector(".score").innerHTML = `<img src="img/vedar.jpg" alt="" class="avatar">: ${win} vs <img src="img/c3po.jpg" alt="" class="avatar">:${lose}`;
 }
