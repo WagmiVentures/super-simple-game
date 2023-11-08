@@ -1,21 +1,49 @@
-body{
-           
-            
-    background-color: rgb(156, 156, 109);
+*{
+    box-sizing: border-box;
+    margin: 0;
 
-    margin: auto;
+    padding: 0;
+}
+
+
+body{ 
+          
+    background-color: rgb(156, 156, 109);
 
     max-height: 100vh;
 }
 
 .heading{
     margin: auto;
-    text-align: center;
+    text-align: center;  
 }
 
+.players{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.computer,
+.user {
+    margin: 20px;
+    font-weight: bold;
+
+    list-style: none;
+}
+
+
+.avatar {
+    width:50px;
+    border-radius: 50%;
+}
+
+
 .play-button{
-    width: 20vw;
-    height: 20vw;
+    width: 300px;
+    aspect-ratio: 1/1;
     background-color: rgb(210, 105, 30);
     
     border-radius: 50%;
@@ -47,33 +75,33 @@ body{
     display: flex;
     justify-content: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+
+    text-align: center;
 }
 
-.icon{
-    max-width: 100%;
-    border-radius: 50%;
+.play-button-logo{
+    width: 100%;
+    font-size: 6rem;
+    
 }
 
 
 h1,h3{
-    margin: 80px auto;
+    margin: 80px 20px auto;
     white-space: nowrap;
 }
 
 .scores-section{
     display: flex;
    
-    justify-self: center;
+    justify-content: center;
     align-items: center;
 
-    max-width: 70vw;
-
-    margin-top: 5vh;
+    width: 1.5vw;
+    height:100px;
 
     margin: auto;
-
-    max-width: 400px;
 }
 
 
@@ -83,12 +111,10 @@ h1,h3{
 
     min-height: 5vh;
     
+    padding: 10px;
+
     flex: 5;
-    
-    padding-top: 3vh;
-    padding-left: 10px;
-    padding-right: 10px;
-   
+  
     border: 2px solid darkmagenta;
     border-radius: 4px;
 
@@ -97,19 +123,14 @@ h1,h3{
     white-space: nowrap;
 
     margin-right: 10px;
+
 }
 
-.reset-button{
-	text-align: center;
-	
-    flex: 1;
-	
-    padding: 20px;
-}
+
 
 .reset{
     background-color: antiquewhite;
-    border-radius: 2rem;
+    border-radius: 1rem;
     border: none;
 
     text-align: center;
@@ -120,10 +141,12 @@ h1,h3{
     box-shadow: none;
     
     padding: 10px 20px;
-    font-size: 0.8vw;
+    font-size: 20px;
     white-space: nowrap;
 
-   
+    height:51px;
+    width: 120px;
+    
 }
 
 .reset:hover{
@@ -133,10 +156,69 @@ h1,h3{
 }
 
 
-@media (min-width: 450px) {
-	.score {
-		font-size: 3vh;
-	}
+@media (min-width:650px) and (max-width:1500px){
+    
+    .scores-section{
+        display: flex;
+       
+        justify-content: center;
+        align-items: center;
+    
+        width: 60vw;
+       
+    
+        margin: auto;
+    }
+    
+    .score{
+        width:40vw;
+        font-size: 24px;
+    }
 }
 
+@media (max-width:649px) {
+    
+    .scores-section{
+        display: flex;
+       
+        justify-content: center;
+        align-items: center;
+    
+        width: 60vw;
+       
+    
+        margin: auto;
+    }
+    
+    .score{
+        width:40vw;
+        font-size: 20px;
+    }
 
+    .reset{
+        
+        
+        font-size: 16px;
+        white-space: nowrap;
+    
+        height:42px;
+        width: 100px;
+        
+        padding: 5px;
+    }
+
+    .play-button{
+        width: 150px;
+        height: 150px;
+        aspect-ratio: 1/1;
+        margin: 0 2.5vw;
+    }
+
+    .show-result{
+        font-size: 16px;
+    }
+
+    .scores-section .avatar{
+        width: 28px
+    }
+}
