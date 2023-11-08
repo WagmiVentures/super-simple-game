@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>&#9994 Rock, &#9996 Scissor and &#128400 Paper</title>
-    <script src="scripts/rcp.js" defer></script>
-    <link rel="stylesheet" href="styles/rcp.css">
+    <script src="/scripts/rcp.js" defer></script>
+    <link rel="stylesheet" href="/styles/rcp.css">
 </head>
 <body>
     <div class="heading">
@@ -13,29 +13,34 @@
         <h3 class="show-result">Start game by clicking one of the below 
             <span>&#9994</span><span>&#9996</span><span>&#128400</span>
         </h3>
+        <ul class="players">
+            <li class="computer">Computer = <img src="/img/c3po.jpg" alt="" class="avatar"></li>
+            <li class="user">You = <img src="/img/vedar.jpg" alt="" class="avatar"></li>
+        </ul>
     </div>
 
     <!--play buttons-->
 
     <div class="rcp">
         <button class="rock play-button">
-            <img src="img/Rock.jpg" alt="" class="icon">
+            <span class="play-button-logo">&#9994</span>
         </button>
 
         <button class="scissor play-button" onclick="playerSelectScissor()">
-            <img src="img/scissor.jpg" alt="" class="icon">
+            <span class="play-button-logo">&#9996</span>
         </button>
         
         
         <button class="paper play-button" onclick="playerSelectPaper()">
-            <img src="img/paper.jpg" alt="" class="icon">
+            <span class="play-button-logo">&#128400</span>
         </button>
 
     </div>
 
 <div class="scores-section">   
    
-        <h2 class="score">Win: 0 vs Lose: 0</h2>
+        <h2 class="score"><img src="/img/vedar.jpg" alt="" class="avatar">: 
+            0 -- <img src="/img/c3po.jpg" alt="" class="avatar">: 0</h2>
    
 
   
